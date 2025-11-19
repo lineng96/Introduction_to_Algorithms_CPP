@@ -7,12 +7,14 @@ set(BUILD_SHARED_LIBS OFF)
 add_subdirectory(libs/googletest)
 
 add_library(AlgorithmLibrary
-        src/getting_started/Insertion_sort.cpp
         src/util/ArrayUtil.cpp
+        src/getting_started/Insertion_sort.cpp
+        src/getting_started/Merge_sort.cpp
 )
 
 target_include_directories(AlgorithmLibrary PUBLIC
         ${PROJECT_SOURCE_DIR}/src/getting_started
+        ${PROJECT_SOURCE_DIR}/src/util
         ${PROJECT_SOURCE_DIR}/libs/googletest/googletest/include
 )
 

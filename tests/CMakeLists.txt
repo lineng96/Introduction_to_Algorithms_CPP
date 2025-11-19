@@ -1,5 +1,5 @@
 add_executable(run_tests
-        Insertion_sort_Test.cpp
+        Sort_Test.cpp
 )
 
 target_link_libraries(run_tests
