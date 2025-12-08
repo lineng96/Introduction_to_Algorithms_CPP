@@ -5,7 +5,7 @@
 #include "Insertion_sort.h"
 
 void Insertion_sort::sort(std::vector<int> &arr) {
-    const int n = arr.size();
+    const size_t n = arr.size();
     for (int i = 1; i < n; ++i) {
         const int current_value = arr[i];
         int j = i - 1;
@@ -19,7 +19,7 @@ void Insertion_sort::sort(std::vector<int> &arr) {
 }
 //Reverse order
 void Insertion_sort::reverseSort(std::vector<int> &arr) {
-    const int n = arr.size();
+    const size_t n = arr.size();
     for (int i = 0; i < n; ++i) {
         const int current_value = arr[i];
         int j = i - 1;

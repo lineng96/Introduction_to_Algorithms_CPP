@@ -29,7 +29,7 @@ TEST(InsertionSortTest, SortsAscendingAndDescendingOrder) {
 
 TEST(MergeSortTest, SortsAscendingOrder) {
     std::vector data = {12, 11, 13, 5, 6, 7};
-    const int n = data.size();
+    const size_t n = data.size();
 
     std::cout << "原始数组: ";
     ArrayUtil::printArray(data);

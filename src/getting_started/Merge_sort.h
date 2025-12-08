@@ -7,7 +7,7 @@
 #include <vector>
 
 
-namespace  Merge_sort {
+namespace Merge_sort {
     void mergeSort(std::vector<int>& arr, int left, int right);
 };
 

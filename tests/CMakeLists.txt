@@ -1,5 +1,6 @@
 add_executable(run_tests
         Sort_Test.cpp
+        Find_max_subarray_Test.cpp
 )
 
 target_link_libraries(run_tests
