@@ -9,6 +9,7 @@
 
 namespace Find_max_subarray {
     void maxSubarrayByBruteForce(const std::vector<int> &prices);
+    void maxSubarrayByDivideAndConquer(const std::vector<int> &prices);
 };
 
 
