@@ -11,6 +11,7 @@ add_library(AlgorithmLibrary
         src/getting_started/Insertion_sort.cpp
         src/getting_started/Merge_sort.cpp
         src/divide_and_conquer/Find_max_subarray.cpp
+        src/divide_and_conquer/Matrix_multiplication.cpp
 )
 
 target_include_directories(AlgorithmLibrary PUBLIC
