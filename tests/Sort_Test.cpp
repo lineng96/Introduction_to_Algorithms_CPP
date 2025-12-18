@@ -6,6 +6,7 @@
 #include "ArrayUtil.h"
 #include "Insertion_sort.h"
 #include "Merge_sort.h"
+#include "Heap_Sort.h"
 #include <vector>
 
 
@@ -36,6 +37,19 @@ TEST(MergeSortTest, SortsAscendingOrder) {
 
     // MergeSort
     Merge_sort::mergeSort(data, 0, n - 1);
+
+    std::cout << "排序结果: ";
+    ArrayUtil::printArray(data);
+}
+
+TEST(HeapSort, HeapSort) {
+    std::vector data = {12, 11, 13, 5, 6, 7};
+
+    std::cout << "原始数组: ";
+    ArrayUtil::printArray(data);
+
+    // HeapSort
+    Heap_Sort::HeapSort::heapSort(data);
 
     std::cout << "排序结果: ";
     ArrayUtil::printArray(data);

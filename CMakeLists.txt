@@ -12,6 +12,7 @@ add_library(AlgorithmLibrary
         src/getting_started/Merge_sort.cpp
         src/divide_and_conquer/Find_max_subarray.cpp
         src/divide_and_conquer/Matrix_multiplication.cpp
+        src/sort/Heap_Sort.cpp
 )
 
 target_include_directories(AlgorithmLibrary PUBLIC
@@ -19,6 +20,7 @@ target_include_directories(AlgorithmLibrary PUBLIC
         ${PROJECT_SOURCE_DIR}/src/getting_started
         ${PROJECT_SOURCE_DIR}/src/util
         ${PROJECT_SOURCE_DIR}/src/divide_and_conquer
+        ${PROJECT_SOURCE_DIR}/src/sort
 )
 
 add_executable(MainDemo main.cpp)
