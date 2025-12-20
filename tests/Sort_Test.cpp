@@ -7,6 +7,7 @@
 #include "Insertion_sort.h"
 #include "Merge_sort.h"
 #include "Heap_Sort.h"
+#include "Quick_Sort.h"
 #include <vector>
 
 
@@ -50,6 +51,18 @@ TEST(HeapSort, HeapSort) {
 
     // HeapSort
     Heap_Sort::HeapSort::heapSort(data);
+
+    std::cout << "排序结果: ";
+    ArrayUtil::printArray(data);
+}
+
+TEST(QuickSort, QuickSort) {
+    std::vector data = {12, 11, 13, 5, 6, 7};
+    std::cout << "原始数组: ";
+    ArrayUtil::printArray(data);
+
+    // QuickSort
+    Quick_Sort::QuickSort::quickSort(data, 0, data.size() - 1);
 
     std::cout << "排序结果: ";
     ArrayUtil::printArray(data);

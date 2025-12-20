@@ -13,6 +13,7 @@ add_library(AlgorithmLibrary
         src/divide_and_conquer/Find_max_subarray.cpp
         src/divide_and_conquer/Matrix_multiplication.cpp
         src/sort/Heap_Sort.cpp
+        src/sort/Quick_Sort.cpp
 )
 
 target_include_directories(AlgorithmLibrary PUBLIC
