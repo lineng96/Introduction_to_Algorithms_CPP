@@ -9,6 +9,7 @@
 #include "Heap_Sort.h"
 #include "Quick_Sort.h"
 #include "Counting_Sort.h"
+#include "Radix_Sort.h"
 #include <vector>
 
 
@@ -80,4 +81,16 @@ TEST(CountingSort, CountingSort) {
 
     std::cout << "排序结果: ";
     ArrayUtil::printArray(B);
+}
+
+TEST(RadixSort, RadixSort) {
+    std::vector data = {12, 11, 13, 5, 6, 7};
+    std::cout << "原始数组: ";
+    ArrayUtil::printArray(data);
+
+    // RadixSort
+    Radix_Sort::RadixSort::radixSort(data);
+
+    std::cout << "排序结果: ";
+    ArrayUtil::printArray(data);
 }
