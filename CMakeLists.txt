@@ -16,6 +16,7 @@ add_library(AlgorithmLibrary
         src/sort/Quick_Sort.cpp
         src/sort/Counting_Sort.cpp
         src/sort/Radix_Sort.cpp
+        src/sort/Bucket_Sort.cpp
 )
 
 target_include_directories(AlgorithmLibrary PUBLIC
