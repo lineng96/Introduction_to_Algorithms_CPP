@@ -8,6 +8,7 @@
 #include "Merge_sort.h"
 #include "Heap_Sort.h"
 #include "Quick_Sort.h"
+#include "Counting_Sort.h"
 #include <vector>
 
 
@@ -66,4 +67,17 @@ TEST(QuickSort, QuickSort) {
 
     std::cout << "排序结果: ";
     ArrayUtil::printArray(data);
+}
+
+TEST(CountingSort, CountingSort) {
+    std::vector data = {12, 11, 13, 5, 6, 7};
+    std::cout << "原始数组: ";
+    ArrayUtil::printArray(data);
+
+    // CountingSort
+    constexpr int k = 13;
+    const std::vector<int> B = Counting_Sort::CountingSort::countingSort(data, k);
+
+    std::cout << "排序结果: ";
+    ArrayUtil::printArray(B);
 }
